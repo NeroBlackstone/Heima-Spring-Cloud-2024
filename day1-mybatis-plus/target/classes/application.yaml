@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/mp?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: nero
+    password: 1
+logging:
+  level:
+    com.itheima: debug
+  pattern:
+    dateformat: HH:mm:ss
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
